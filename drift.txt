@@ -1,0 +1,172 @@
+Summary:
+We measured the accumulating drift using the sample application with 7 iterations on 5 machines with different processor types running the same version of OS. The following text provides average, minimum and maximum values over 10 runs of the test application.
+
+The results vary and do not strictly correspond to the "power" of the machines, probably influenced by other processes being run on the machine. The first run of the application usually showed the highest accumulating drift, which implies the system was able to optimize further runs, possibly thanks to allocated memory/cache.
+
+The value seams to converge with increasing iterations (value after first iteration often varied a lot) with a very few exceptions. It should be noted the machines were not under heavy load.
+
+OS: Linux 2.6.32 x86_64
+
+Measurement 1:
+HW: 4xSix-Core AMD Opteron(tm) Processor 8439 SE (800MHz, 512 KB cache)
+
+Results (10 attempts):
+Average:
+Iteration        0      92                                                               
+Iteration        1      342                                                              
+Iteration        2      570                                                              
+Iteration        3      824                                                              
+Iteration        4      1052
+Iteration        5      1300
+Iteration        6      1567
+Iteration        7      1777
+Min:
+Iteration        0      203
+Iteration        1      382
+Iteration        2      607
+Iteration        3      778
+Iteration        4      994
+Iteration        5      1200
+Iteration        6      1425
+Iteration        7      1646
+Max:
+Iteration        0      192
+Iteration        1      432
+Iteration        2      723
+Iteration        3      975
+Iteration        4      1229
+Iteration        5      1473
+Iteration        6      1721
+Iteration        7      1953
+
+
+Measurement 2:
+HW: 4xIntel(R) Xeon(TM) CPU 3.06GHz (3052.846 Mhz, 1024 KB cache)
+
+Results (10 attempts):
+Average:
+Iteration        0      134                                                              
+Iteration        1      2011                                                             
+Iteration        2      3967                                                             
+Iteration        3      4928                                                             
+Iteration        4      5893
+Iteration        5      7847                                                             
+Iteration        6      9850                                                             
+Iteration        7      10765
+Min:
+Iteration        0      113                                                              
+Iteration        1      1596
+Iteration        2      2553
+Iteration        3      3508
+Iteration        4      5468
+Iteration        5      7426
+Iteration        6      8385
+Iteration        7      9346
+Max:
+Iteration        0      93
+Iteration        1      1924
+Iteration        2      3881
+Iteration        3      5841
+Iteration        4      7804
+Iteration        5      9758
+Iteration        6      10719
+Iteration        7      12677
+
+Measurement 3:
+HW: 1xIntel(R) Core(TM) i5 CPU M 540 4 cores (1199.000 Mhz, 3072 KB)
+
+Results (10 attempts):
+Average:
+Iteration        0      113
+Iteration        1      286
+Iteration        2      500
+Iteration        3      673
+Iteration        4      857
+Iteration        5      1059
+Iteration        6      1244
+Iteration        7      1424
+Min:
+Iteration        0      112
+Iteration        1      280
+Iteration        2      462
+Iteration        3      675
+Iteration        4      859
+Iteration        5      1040
+Iteration        6      1222
+Iteration        7      1407
+Max:
+Iteration        0      111
+Iteration        1      297
+Iteration        2      495
+Iteration        3      725
+Iteration        4      914
+Iteration        5      1142
+Iteration        6      1332
+Iteration        7      1501
+
+
+Measurement 4:
+HW: 1xAMD Phenom(tm) II X4 965 Processor 4 cores (800.000 Mhz, 512 KB cache)
+
+Results (10 attempts):
+Average:
+Iteration        0      218
+Iteration        1      622
+Iteration        2      1004
+Iteration        3      1346
+Iteration        4      1682
+Iteration        5      2058
+Iteration        6      2420
+Iteration        7      2825
+Min:
+Iteration        0      197
+Iteration        1      496
+Iteration        2      727
+Iteration        3      1035
+Iteration        4      1372
+Iteration        5      1849
+Iteration        6      2269
+Iteration        7      2666
+Max:
+Iteration        0      206
+Iteration        1      682
+Iteration        2      1049
+Iteration        3      1475
+Iteration        4      1897
+Iteration        5      2316
+Iteration        6      2723
+Iteration        7      3107
+
+
+Measurement 5:
+HW: 2xDual-Core AMD Opteron(tm) Processor 2220 SE (2792.527 Mhz, 1024 KB cache)
+
+Results (10 attempts):
+Average:
+Iteration        0      61
+Iteration        1      177
+Iteration        2      303
+Iteration        3      461
+Iteration        4      586
+Iteration        5      744
+Iteration        6      855
+Iteration        7      1013
+Min:
+Iteration        0      74
+Iteration        1      197
+Iteration        2      319
+Iteration        3      449
+Iteration        4      570
+Iteration        5      689
+Iteration        6      810
+Iteration        7      932
+Max:
+Iteration        0      1179
+Iteration        1      1288
+Iteration        2      1409
+Iteration        3      1515
+Iteration        4      1618
+Iteration        5      1721
+Iteration        6      1834
+Iteration        7      1938
+
